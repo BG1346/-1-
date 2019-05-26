@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+	<html>
+    <meta charset = "UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1">
+        <title>자기소개</title>
+        <!-- 합쳐지고 최소화된 최신 CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <!-- 부가적인 테마 -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+        <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="main.css">
+	<body>
+    	<div class="container" style="background-color : white">
+            <div id="space"></div>
+            <div id="space"></div>
+            <div id="space"></div>
+            <div id="ganso"></div>
+            <div class="jumbo"><h1>&nbsp;간단한 소개</h1></div>
+            <div id="space"></div>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>이름</th>
+                        <th>나이</th>
+                        <th>전공</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>신봉근</td>
+                        <td>24</td>
+                        <td>컴퓨터정보통신공학과, 3학년</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>email</th>
+                        <th>취미</th>
+                        <th>고향</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>bg1346@naver.com</td>
+                        <td>음악감상</td>
+                        <td>강릉</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div id="space"></div>
+            <div id="space"></div>
+            <div id="space"></div>
+            <div id="space"></div>
+            <div class="jumbo"><h1>&nbsp;좋아하는 것</h1></div>
+            <div id="space"></div>
+            <div class = "favorite">
+                <div class = "col-sm-4">재밌게 본 영화<br><br>
+                    <img src = "http://i.maniadb.com/images/album_t/260/198/198464_4_f.jpg">
+                    <h5 id="fname">다크나이트</h5>
+                </div>
+                <div class = "col-sm-4">좋아하는 가수<br><br>
+                    <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgFtvM2RGKbPa3sjJOxCGOFLneF1reRn7pRHbbnGEJNJpYblqf">
+                    <h5 id="fname">nao</h5>
+                </div>
+                <div class = "col-sm-4">재밌게 들은 앨범<br><br>
+                    <img src = "https://upload.wikimedia.org/wikipedia/en/thumb/6/6a/Anderson_Paak_Oxnard.jpeg/220px-Anderson_Paak_Oxnard.jpeg">
+                    <h5 id="fname">oxnard</h5>
+                </div>
+                <div class = "col-sm-4" style="clear : both">모스트 챔피언<br><br>
+                    <img src = "https://www.mobafire.com/images/avatars/lee-sin-classic.png">
+                    <h5 id="fname">리신</h5>
+                </div>
+                <div class = "col-sm-4">재밌게 읽은 책<br><br>
+                    <img src = "http://image.auction.co.kr/itemimage/c6/4f/30/c64f303c6.jpg">
+                    <h5 id="fname">청춘 덴데케데케데케</h5>
+                </div>
+                <div class = "col-sm-4">메시 vs 호날두<br><br>
+                    <img src = "http://www.sporbiz.co.kr/news/photo/201807/253703_197654_55.jpg">
+                    <h5 id="fname">호날두</h5>
+                </div>                
+            </div>
+            <div id="space">
+            </div>
+            <div id="space">
+            </div>
+            <div id="space">
+            </div>
+            <div id="space" style="clear : both">
+            </div>
+
+
+                <br><h2>만들고 싶은 프로젝트</h2><hr>
+                <div class="container">
+                    <div id="space"></div>
+                    <div class="row">
+                <div>
+                    <span id="projFont">음성인식 듣기mp3 색인 생성기</span>
+                    <!-- <a a data-toggle="collapse" href="#collapse4" role="button">&nbsp;<span class="badge">자세히 보기</span></a> -->
+                    <div >
+                        <!-- id="collapse4" class="panel-collapse collapse" -->
+                        <br>
+                        <div class="container">
+                            <div class="panel-body">
+                                <h4>개요</h4><hr>&nbsp;교육용 mp3파일을 들을 때 한 페이지의 특정번호의 문제를 듣고 싶으면 약 60분 분량의 mp3파일 중간중간을 찾아가며 번호를 찾아가던 수고를 덜기 위해 계획하였습니다.
+                                <br>
+                                <br>
+                                <h4>구체적인 계획</h4>
+                                <hr>
+                                &nbsp;mp3파일을 제출하면 파일을 분석해 문항별, 문항 내부 번호 별로 색인을 제공할 예정. 음성 인식 기능은 기업에서 무료로 제공되는 REST API를 이용할 계획 (현재 API사용 신청한 사이트 : <a href="http://adams.ai/apiPage?stt" target="_blank">Saltux</a>) 영어듣기 mp3파일의 경우 문항, 번호를 알려줄 때 0.5~1초의 고정적인 시간차이를 가지므로 문항과 영어문장을 구별할 전문적인 알고리즘이 요구되지 않을 것 같아 수월하게 구현할 수 있겠다는 생각이 들었음. 본인을 비롯한 친구들에게서 mp3파일 중 특정 위치를 찾는데 특별한 방법을 쓰는 사람을 보지 못해 많은 사람들에게 도움이 되는 기능이 될 것이라고 생각함.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+                </div>
+
+
+            <div id="space">
+            </div>
+            <div id="space">
+            </div>
+            <div id="space">
+            </div>
+            <div id="space">
+            </div>
+            <div id="space">
+            </div>
+            <div id="space">
+            </div>
+    		<footer style="clear : both">
+    			<div class = "container">
+    				<br>
+    				<div class="row">
+                        <div style="height: 30px">
+                        </div>
+    					<center><h3>읽어 주셔서 감사합니다.</h3></center>
+                        <div style="height: 50px">
+                        </div>
+    				</div>
+    			</div>
+            </footer>
+        </div>
+
+    <script src = "https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	</body>
+	</html>
